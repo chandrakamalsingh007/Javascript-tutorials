@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    background:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+.gradientText{
+    font-family: Poppins;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8
+    );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite ;
+}
+@keyframes gradient{
+    0%{
+        background-position:0% 50% ;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+    0%{
+        background-position:0% 50% ;
+    }
+}
